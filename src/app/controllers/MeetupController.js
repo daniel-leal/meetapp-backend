@@ -28,7 +28,7 @@ class MeetupController {
       where,
       include: [
         { model: User, attributes: ['id', 'name', 'email'] },
-        { model: File, attributes: ['id', 'url', 'path'] }
+        { model: File, attributes: ['id', 'url', 'path'] },
       ],
       limit: 10,
       offset: 10 * page - 10,

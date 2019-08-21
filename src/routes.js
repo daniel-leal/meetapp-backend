@@ -15,7 +15,8 @@ import authMiddleware from './app/middlewares/auth';
 // Validators
 import validateUserStore from './app/validators/UserStore';
 import validateUserUpdate from './app/validators/UserUpdate';
-import validateMeetup from './app/validators/Meetup';
+import validateMeetupStore from './app/validators/MeetupStore';
+import validateMeetupUpdate from './app/validators/MeetupUpdate';
 
 const routes = new Router();
 
@@ -46,8 +47,8 @@ routes.post('/files', upload.single('file'), FileController.store);
  * Meetup
  */
 routes.get('/meetups', MeetupController.index);
-routes.post('/meetups', validateMeetup, MeetupController.store);
-routes.put('/meetups/:id', validateMeetup, MeetupController.update);
+routes.post('/meetups', validateMeetupStore, MeetupController.store);
+routes.put('/meetups/:id', validateMeetupUpdate, MeetupController.update);
 routes.delete('/meetups/:id', MeetupController.delete);
 
 /**
