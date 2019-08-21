@@ -1,1 +1,317 @@
-{"_type":"export","__export_format":4,"__export_date":"2019-08-20T00:56:43.212Z","__export_source":"insomnia.desktop.app:v6.6.2","resources":[{"_id":"req_c37302ea6d2c41a6bdf5d2b053b091a2","authentication":{},"body":{"mimeType":"application/json","text":"{\n\t\"email\": \"danielleal@gmail.com\",\n\t\"password\": \"141414\"\n}"},"created":1566258161443,"description":"","headers":[{"id":"pair_045af4fd537b42b19bbed641b6ee26fc","name":"Content-Type","value":"application/json"}],"isPrivate":false,"metaSortKey":-1566256537846,"method":"POST","modified":1566262414563,"name":"store","parameters":[],"parentId":"fld_7050c6d7e47447ff80648c58bfc53294","settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingSendCookies":true,"settingStoreCookies":true,"url":"{{ base_url  }}/sessions","_type":"request"},{"_id":"fld_7050c6d7e47447ff80648c58bfc53294","created":1566258110449,"description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1566258110449,"modified":1566258110449,"name":"Session","parentId":"wrk_75d8cb553241484795ac77fbff3e0226","_type":"request_group"},{"_id":"wrk_75d8cb553241484795ac77fbff3e0226","created":1566255873207,"description":"","modified":1566255873207,"name":"Meetapp","parentId":null,"_type":"workspace"},{"_id":"req_8804d34bda5546238ccd5b3ad85ce09a","authentication":{},"body":{"mimeType":"application/json","text":"{\n\t\"name\": \"Daniel Leal\",\n\t\"email\": \"danielleal94@gmail.com\",\n\t\"password\": \"123123\"\n}"},"created":1566257196855,"description":"","headers":[{"id":"pair_045af4fd537b42b19bbed641b6ee26fc","name":"Content-Type","value":"application/json"}],"isPrivate":false,"metaSortKey":-1566260917197,"method":"POST","modified":1566260919910,"name":"store","parameters":[],"parentId":"fld_93f0a56032ec4b1aba06b1cb51e4180e","settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingSendCookies":true,"settingStoreCookies":true,"url":"{{ base_url  }}/users","_type":"request"},{"_id":"fld_93f0a56032ec4b1aba06b1cb51e4180e","created":1566257186607,"description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1566257186607,"modified":1566257186607,"name":"Users","parentId":"wrk_75d8cb553241484795ac77fbff3e0226","_type":"request_group"},{"_id":"req_2574142f136749b38f093a277325232d","authentication":{"token":"{{ token  }}","type":"bearer"},"body":{"mimeType":"application/json","text":"{\n\t\"name\": \"Daniel San\",\n\t\"email\": \"danielleal@gmail.com\",\n\t\"oldPassword\": \"123123\",\n\t\"password\": \"141414\",\n\t\"confirmPassword\": \"141414\"\n}"},"created":1566260917147,"description":"","headers":[{"id":"pair_138976985e714400abf49c8154ae28e5","name":"Content-Type","value":"application/json"}],"isPrivate":false,"metaSortKey":-1566260917147,"method":"PUT","modified":1566262405594,"name":"update","parameters":[],"parentId":"fld_93f0a56032ec4b1aba06b1cb51e4180e","settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingSendCookies":true,"settingStoreCookies":true,"url":"{{ base_url  }}/users","_type":"request"},{"_id":"req_83553822280d40a8a9a966a0ceea95e1","authentication":{},"body":{},"created":1566255878837,"description":"","headers":[],"isPrivate":false,"metaSortKey":-1566255878837,"method":"GET","modified":1566257182325,"name":"Hello","parameters":[],"parentId":"fld_756bb7bd536c498aaa812a92f97428f6","settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingSendCookies":true,"settingStoreCookies":true,"url":"http://localhost:3333","_type":"request"},{"_id":"fld_756bb7bd536c498aaa812a92f97428f6","created":1566257180182,"description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1566257180183,"modified":1566257180182,"name":"Home","parentId":"wrk_75d8cb553241484795ac77fbff3e0226","_type":"request_group"},{"_id":"env_55a2e800327a0c84d04805d7358012042346ac3e","color":null,"created":1566255873287,"data":{"base_url":"http://localhost:3333","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNTY2MjYyNDE1LCJleHAiOjE1NjY4NjcyMTV9.2DOtyI9KBXNJDbj9gPEdyEfpzzfLbdR9GRRSR8TbVMk"},"dataPropertyOrder":{"&":["base_url","token"]},"isPrivate":false,"metaSortKey":1566255873287,"modified":1566262435203,"name":"Base Environment","parentId":"wrk_75d8cb553241484795ac77fbff3e0226","_type":"environment"},{"_id":"jar_55a2e800327a0c84d04805d7358012042346ac3e","cookies":[],"created":1566255873295,"modified":1566255873295,"name":"Default Jar","parentId":"wrk_75d8cb553241484795ac77fbff3e0226","_type":"cookie_jar"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2019-08-21T02:21:00.900Z",
+  "__export_source": "insomnia.desktop.app:v6.6.2",
+  "resources": [
+    {
+      "_id": "req_622f4a36ed934395b689763517cd8c16",
+      "authentication": { "token": "{{ token  }}", "type": "bearer" },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"React e .NET SP\",\n\t\"description\": \"Workshop de ReactJS com a Rocketseat\",\n\t\"location\": \"UNAMA Alcindo Cacela\",\n\t\"date\": \"2019-11-30\"\n}"
+      },
+      "created": 1566349457363,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_00f0d2f88abb4ce78b06492109a7aef0",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1566349457372,
+      "method": "POST",
+      "modified": 1566353711921,
+      "name": "store",
+      "parameters": [],
+      "parentId": "fld_6ce5026007d549d19626b968562f53ee",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_6ce5026007d549d19626b968562f53ee",
+      "created": 1566349448664,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1566349448664,
+      "modified": 1566349448664,
+      "name": "Meetup",
+      "parentId": "wrk_75d8cb553241484795ac77fbff3e0226",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_75d8cb553241484795ac77fbff3e0226",
+      "created": 1566255873207,
+      "description": "",
+      "modified": 1566255873207,
+      "name": "Meetapp",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_8ee0f60dddfb436699b97fce5ffdf539",
+      "authentication": { "token": "{{ token  }}", "type": "bearer" },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"FC Nuvem e NodeJS SP\",\n\t\"description\": \"- Mensageria com NodeJS, Azure Service Bus e Queue Storage - Luis Felipe\",\n\t\"location\": \"UNAMA Alcindo Cacela\",\n\t\"date\": \"2019-08-21\"\n}"
+      },
+      "created": 1566353039647,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_00f0d2f88abb4ce78b06492109a7aef0",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1566327322328.25,
+      "method": "PUT",
+      "modified": 1566353390153,
+      "name": "update",
+      "parameters": [],
+      "parentId": "fld_6ce5026007d549d19626b968562f53ee",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups/8",
+      "_type": "request"
+    },
+    {
+      "_id": "req_01b82859f5ef44d49bbf456424293754",
+      "authentication": { "token": "{{ token  }}", "type": "bearer" },
+      "body": {},
+      "created": 1566353866601,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1566316254806.375,
+      "method": "DELETE",
+      "modified": 1566353902561,
+      "name": "delete",
+      "parameters": [],
+      "parentId": "fld_6ce5026007d549d19626b968562f53ee",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups/10",
+      "_type": "request"
+    },
+    {
+      "_id": "req_70341028b618457d841e1f0d413d26c3",
+      "authentication": { "token": "{{ token  }}", "type": "bearer" },
+      "body": {},
+      "created": 1566351583732,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1566305187284.5,
+      "method": "GET",
+      "modified": 1566353733968,
+      "name": "index",
+      "parameters": [
+        {
+          "id": "pair_f97f5d7cb9414bfeb0ebc15d5390bee6",
+          "name": "owner",
+          "value": "true"
+        }
+      ],
+      "parentId": "fld_6ce5026007d549d19626b968562f53ee",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c37302ea6d2c41a6bdf5d2b053b091a2",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"afbleal@gmail.com\",\n\t\"password\": \"123123\"\n}"
+      },
+      "created": 1566258161443,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_045af4fd537b42b19bbed641b6ee26fc",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1566256537846,
+      "method": "POST",
+      "modified": 1566353345109,
+      "name": "store",
+      "parameters": [],
+      "parentId": "fld_7050c6d7e47447ff80648c58bfc53294",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/sessions",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_7050c6d7e47447ff80648c58bfc53294",
+      "created": 1566258110449,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1566258110449,
+      "modified": 1566258110449,
+      "name": "Session",
+      "parentId": "wrk_75d8cb553241484795ac77fbff3e0226",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_8804d34bda5546238ccd5b3ad85ce09a",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"André Leal\",\n\t\"email\": \"afbleal@gmail.com\",\n\t\"password\": \"123123\"\n}"
+      },
+      "created": 1566257196855,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_045af4fd537b42b19bbed641b6ee26fc",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1566260917197,
+      "method": "POST",
+      "modified": 1566353330838,
+      "name": "store",
+      "parameters": [],
+      "parentId": "fld_93f0a56032ec4b1aba06b1cb51e4180e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_93f0a56032ec4b1aba06b1cb51e4180e",
+      "created": 1566257186607,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1566257186607,
+      "modified": 1566257186607,
+      "name": "Users",
+      "parentId": "wrk_75d8cb553241484795ac77fbff3e0226",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_2574142f136749b38f093a277325232d",
+      "authentication": { "token": "{{ token  }}", "type": "bearer" },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Daniel San\",\n\t\"email\": \"danielleal@gmail.com\",\n\t\"oldPassword\": \"123123\",\n\t\"password\": \"141414\",\n\t\"confirmPassword\": \"141414\"\n}"
+      },
+      "created": 1566260917147,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_138976985e714400abf49c8154ae28e5",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1566260917147,
+      "method": "PUT",
+      "modified": 1566262405594,
+      "name": "update",
+      "parameters": [],
+      "parentId": "fld_93f0a56032ec4b1aba06b1cb51e4180e",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users",
+      "_type": "request"
+    },
+    {
+      "_id": "req_83553822280d40a8a9a966a0ceea95e1",
+      "authentication": {},
+      "body": {},
+      "created": 1566255878837,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1566255878837,
+      "method": "GET",
+      "modified": 1566257182325,
+      "name": "Hello",
+      "parameters": [],
+      "parentId": "fld_756bb7bd536c498aaa812a92f97428f6",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3333",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_756bb7bd536c498aaa812a92f97428f6",
+      "created": 1566257180182,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1566257180183,
+      "modified": 1566257180182,
+      "name": "Home",
+      "parentId": "wrk_75d8cb553241484795ac77fbff3e0226",
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_55a2e800327a0c84d04805d7358012042346ac3e",
+      "color": null,
+      "created": 1566255873287,
+      "data": {
+        "base_url": "http://localhost:3333",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTY2MzUzMzQ2LCJleHAiOjE1NjY5NTgxNDZ9.VSTVSDzfgRq9rQugPU7pDtP3jrX0KpK1DhHHLX3u6o4"
+      },
+      "dataPropertyOrder": { "&": ["base_url", "token"] },
+      "isPrivate": false,
+      "metaSortKey": 1566255873287,
+      "modified": 1566353362033,
+      "name": "Base Environment",
+      "parentId": "wrk_75d8cb553241484795ac77fbff3e0226",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_55a2e800327a0c84d04805d7358012042346ac3e",
+      "cookies": [],
+      "created": 1566255873295,
+      "modified": 1566255873295,
+      "name": "Default Jar",
+      "parentId": "wrk_75d8cb553241484795ac77fbff3e0226",
+      "_type": "cookie_jar"
+    }
+  ]
+}
